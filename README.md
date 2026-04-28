@@ -6,6 +6,46 @@ Developed as a Software Engineering project at Kasetsart University in collabora
 
 ---
 
+## ⚡ Quick Start
+
+An interactive EEG analysis platform that enables reproducible preprocessing,
+visualization, and machine learning for predicting behavior from prestimulus EEG signals.
+
+- ⚙️ FastAPI + modular pipeline
+- 🧠 Supports EEGNet and custom models
+- 🔁 Reproducible workflows
+
+To get started:
+```bash
+git clone https://github.com/Nantawat6510545543/EEGAnalysis-Platform-for-Prestimulus-EEG-Based-Behavioral-Prediction.git
+cd backend
+cp sample.env .env
+docker-compose up --build
+```
+
+Then open http://localhost:3000/ to access the application.
+
+---
+
+## 📑 Table of Contents
+
+- [Overview](#overview)
+- [System Architecture](#-system-architecture)
+- [Data & Study Setup](#-data--study-setup)
+- [Getting Started](#-getting-started)
+- [API Documentation](#-api-documentation)
+- [Typical Workflow](#-typical-workflow)
+- [Machine Learning Component](#-machine-learning-component)
+- [Key Findings](#-key-findings)
+- [Example Output](#-example-output)
+- [Reproducibility Features](#-reproducibility-features)
+- [Features](#-features)
+- [Future Work](#-future-work)
+- [Authors](#-authors)
+- [Notes](#-notes)
+
+---
+
 ## 🧠 Overview
 
 EEG research workflows are often fragmented across notebooks, making them difficult to reproduce, compare, and scale.
@@ -102,7 +142,8 @@ docker-compose up --build
 
 For the first build, it might take at least 40 minutes or more to install.
 
-After running, the backend will be available at: http://localhost:8000
+After running, the web application will be available at: http://localhost:3000
+and the backend at: http://localhost:8000
 
 ---
 
