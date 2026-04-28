@@ -29,7 +29,7 @@ Then open http://localhost:3000/ to access the application.
 
 ## 📑 Table of Contents
 
-- [Overview](#overview)
+- [Overview](#-overview)
 - [System Architecture](#-system-architecture)
 - [Data & Study Setup](#-data--study-setup)
 - [Getting Started](#-getting-started)
@@ -89,6 +89,7 @@ Web UI → FastAPI → EEG Pipeline → Model Training → Results
 
 ### Backend Structure
 
+```bash
 app/
 ├── api/ # FastAPI endpoints
 ├── pipeline/ # EEG processing pipeline
@@ -96,6 +97,7 @@ app/
 ├── ai_models/ # ML/DL models (EEGNet, CNN-LSTM, etc.)
 ├── plots/ # visualization modules
 ├── schemas/ # parameter & request schemas
+```
 
 ---
 
@@ -129,11 +131,13 @@ cd backend
 ```bash
 cp sample.env .env
 ```
-Update .env:
 
+Update .env:
+```bash
 DATA_ROOT=/path/to/HBN-EEG
 BACKEND_URL=http://localhost:8000
 FRONTEND_URL=http://localhost:3000
+```
 
 ### 3. Run with Docker
 ```bash
@@ -142,15 +146,19 @@ docker-compose up --build
 
 For the first build, it might take at least 40 minutes or more to install.
 
-After running, the web application will be available at: http://localhost:3000
-and the backend at: http://localhost:8000
+After running, the web application will be available at:
+> http://localhost:3000
+
+and the backend at:
+> http://localhost:8000
 
 ---
 
 ## 📡 API Documentation
 This project uses FastAPI’s built-in interactive docs.
 
-To see, visit: http://localhost:8000/docs
+To see, visit:
+> http://localhost:8000/docs
 
 ---
 
